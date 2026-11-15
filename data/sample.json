@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "kind": "fund",
+      "id": "A",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {}
+    },
+    {
+      "kind": "fund",
+      "id": "B",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {}
+    },
+    {
+      "kind": "security",
+      "id": "factory-equity",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "issuer": "factory",
+        "instrument": "equity",
+        "denominator_kind": "equity_value"
+      }
+    },
+    {
+      "kind": "issuer",
+      "id": "factory",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "emissions": "200",
+        "equity_value": "1000",
+        "enterprise_value": "1500"
+      }
+    },
+    {
+      "kind": "holding",
+      "id": "a-b",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "fund": "A",
+        "target": "B",
+        "weight": "0.4"
+      }
+    },
+    {
+      "kind": "holding",
+      "id": "a-s",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "fund": "A",
+        "target": "factory-equity",
+        "weight": "0.5"
+      }
+    },
+    {
+      "kind": "holding",
+      "id": "b-a",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "fund": "B",
+        "target": "A",
+        "weight": "0.2"
+      }
+    },
+    {
+      "kind": "holding",
+      "id": "b-s",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "fund": "B",
+        "target": "factory-equity",
+        "weight": "0.6"
+      }
+    },
+    {
+      "kind": "holding",
+      "id": "b-cash",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "fund": "B",
+        "target": "cash",
+        "weight": "0.2"
+      }
+    },
+    {
+      "kind": "position",
+      "id": "portfolio-A",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "target": "A",
+        "amount": "100",
+        "currency": "CNY",
+        "day": "2026-11-01"
+      }
+    },
+    {
+      "kind": "position",
+      "id": "portfolio-direct",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "target": "factory-equity",
+        "amount": "50",
+        "currency": "USD",
+        "day": "2026-11-01"
+      }
+    },
+    {
+      "kind": "fx",
+      "id": "cny",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "currency": "CNY",
+        "day": "2026-11-01",
+        "value": "1"
+      }
+    },
+    {
+      "kind": "fx",
+      "id": "usd",
+      "revision": 1,
+      "known_at": "2026-10-01T00:00:00Z",
+      "data": {
+        "currency": "USD",
+        "day": "2026-11-01",
+        "value": "7"
+      }
+    }
+  ]
+}
